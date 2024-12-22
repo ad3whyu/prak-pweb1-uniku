@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Kamar</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="file"],
+    select {
+      width: 50vh;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      outline: none;
+      color: dimgray;
+    }
+    div {
+      border-radius: 5px;
+      background-color: #f3f3f3;
+      padding: 20px;
+      box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    }
+    button[type="submit"] {
+      background-color: green;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      padding: 5px;
+      margin: 10px;
+      width: 25%;
+    }
+    h1 {
+      font-weight: normal;
+    }
+  </style>
+  <body>
+    <div class="form-1">
+      <h1>Form Input Data Kamar</h1>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td>Id Kamar :</td>
+            <td>
+              <input type="number" name="idPesan" placeholder="Nomor Kamar" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gambar Ruangan</td>
+            <td>
+              <input type="file" name="gambar" required />
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kamar :</td>
+            <td>
+              <select name="tipeKamar" id="">
+                <option value="-">--Pilih--</option>
+                <option value="s">Standar</option>
+                <option value="d">Deluxe</option>
+                <option value="f">Family</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Harga :</td>
+            <td>
+              <input type="number" name="harga" placeholder="Rp 5.000.000" />
+            </td>
+          </tr>
+          <tr>
+            <td>Fasilitas :</td>
+            <td>
+              <input
+                type="checkbox"
+                id="fasilitas"
+                name="fasilitas"
+                value="Gym"
+                checked
+              />
+              Water Heater
+              <input
+                type="checkbox"
+                id="fasilitas"
+                name="fasilitas"
+                value="ft"
+              />
+              Roftoop
+              <input
+                type="checkbox"
+                id="fasilitas"
+                name="fasilitas"
+                value="ac"
+              />
+              Televisi
+              <input
+                type="checkbox"
+                id="fasilitas"
+                name="fasilitas"
+                value="bth"
+              />
+              Bathup
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit">Input</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

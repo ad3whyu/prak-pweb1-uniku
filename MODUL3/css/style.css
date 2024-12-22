@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li:hover > a {
+  color: #ddd;
+}
+
+/* Dropdown menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #555;
+  min-width: 200px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+  text-align: left;
+}
+
+nav ul li ul li a:hover {
+  background-color: #666;
+}
+
+/* Nested submenu */
+nav ul li ul li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #666;
+  min-width: 200px;
+}
+
+nav ul li ul li:hover > ul {
+  display: block;
+}
+.youtube {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+iframe {
+  margin: 5px;
+  width: 300px;
+  height: 150px;
+}
+.gambar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 18px;
+  row-gap: 5px;
+  margin-top: 10px;
+}
+.gambar img {
+  width: 335px;
+  height: 162px;
+}
+.media-container {
+  display: flex;
+  align-items: flex-start;
+}
+.footer {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}

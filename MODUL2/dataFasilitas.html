@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Data Kamar</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="time"],
+    input[type="file"],
+    select {
+      width: 50vh;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      outline: none;
+      color: dimgray;
+    }
+    div {
+      border-radius: 5px;
+      background-color: #f3f3f3;
+      padding: 20px;
+      box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+    }
+    button[type="submit"] {
+      background-color: blue;
+      border-radius: 5px;
+      color: white;
+      border: none;
+      padding: 5px;
+      margin: 10px;
+      width: 25%;
+    }
+    h1 {
+      font-weight: normal;
+    }
+  </style>
+  <body>
+    <div class="form-1">
+      <h1>Form Input Data Fasilitas</h1>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td>Id Kamar :</td>
+            <td>
+              <input type="number" name="idPesan" placeholder="Nomor Kamar" />
+            </td>
+          </tr>
+          <tr>
+            <td>Nama Kamar :</td>
+            <td>
+              <input type="text" name="namaKamar" placeholder="" />
+            </td>
+          </tr>
+          <tr>
+            <td>Harga Weekend :</td>
+            <td>
+              <input
+                type="number"
+                name="hargaWeekend"
+                placeholder="Rp 5.000.000"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Harga Weekday :</td>
+            <td>
+              <input
+                type="number"
+                name="hargaWeekday"
+                placeholder="Rp 3.000.000"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Kuota :</td>
+            <td>
+              <input
+                type="number"
+                name="kuotaKamar"
+                placeholder="Banyaknya Kamar"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jam Buka :</td>
+            <td>
+              <input type="time" name="jamBuka" />
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>Jam Tutup :</td>
+            <td>
+              <input type="time" name="jamTuto" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" >
+              <button type="submit">Input</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah data MK</title>
+</head>
+<body>
+    <h1>Form Input Nilai Mata Kuliah</h1>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>Mata Kuliah</td>
+                <td><select name="namaMK" id="">
+                    <option value="-">--PILIH SALAH SATU--</option>
+                    <option value="pweb1" selected>Pemrograman Web 1</option>
+                    <option value="bp1" selected>Bahasa Pemrogrmana 1</option>
+                    <option value="alin" selected>Alajabr Linear</option>
+                    <option value="md" selected>Matematika Diskrit</option>
+                    <option value="litek" selected>Literasi Teknologi</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Dosen</td>
+                <td><select name="dosenMK" id="">
+                    <option value="-">--PILIH SALAH SATU--</option>
+                    <option value="siti" selected>Siti Maesyaroh, S.Kom., M.Kom</option>
+                    <option value="yati" selected>Yati Nurhayati, S.Kom., M.Kom</option>
+                    <option value="rio" selected>Rio Priantama, S.T., M.T</option>
+                    <option value="roro" selected>Roro Ening Hartini, S.Kom., M.Kom</option>
+                    <option value="heri" selected>Heri Herwanto, M.Pd.</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah SKS</td>
+                <td><input type="number" id="SKS" name="SKS"></td>
+            </tr>
+            <tr>
+                <td>Nama Mahasiswa</td>
+                <td><input type="text" id="namaMK" name="namaMK" maxlength="35" min="5" placeholder="Nama Lengkap" required></td>
+            </tr>
+            <tr>
+                <td>Jumlah Kehadiran</td>
+                <td><input type="number" id="kehadiran" name="kehadiran" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai Tugas</td>
+                <td><input type="number" id="nilaiTugas" name="nilaiTugas" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai Quiz</td>
+                <td><input type="number" id="nilaiQuiz" name="nilaiQuiz" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai UTS</td>
+                <td><input type="number" id="nilaiUTS" name="nilaiUTS" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai UAS</td>
+                <td><input type="number" id="nilaiUAS" name="nilaiUAS" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai Akhir</td>
+                <td><input type="number" id="nilaiAKhir" name="nilaiAkhir" size="50"></td>
+            </tr>
+            <tr>
+                <td>Nilai Huruf</td>
+                <td><select name="nilaiHuruf" id="">
+                    <option value="-">--PILIH SALAH SATU--</option>
+                    <option value="a" selected>A</option>
+                    <option value="ab" selected>AB</option>
+                    <option value="b" selected>B</option>
+                    <option value="bc" selected>BC</option>
+                    <option value="c" selected>C</option>
+                    <option value="cd" selected>CD</option>
+                    <option value="d" selected>D</option>
+                    <option value="e" selected>E</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">INPUT</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

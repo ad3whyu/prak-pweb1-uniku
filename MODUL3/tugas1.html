@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="css/styleForm1.css">
+  </head>
+  <body>
+    <div class="form-1">
+      <h1>Form Pemesanan</h1>
+      <form action="" method="post">
+        <table>
+          <tr>
+            <td>Id pemesan:</td>
+            <td>
+              <input type="number" name="idPesan" placeholder="1" readonly />
+            </td>
+          </tr>
+          <tr>
+            <td>Nama Pemesan :</td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                placeholder="Nama Lengkap"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Nomor Identitas :</td>
+            <td>
+              <input
+                type="number"
+                name="identitas"
+                placeholder="Nomor Identitas"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Tipe Kamar :</td>
+            <td>
+              <select name="tipeKamar" id="">
+                <option value="-">--Pilih--</option>
+                <option value="s">Standar</option>
+                <option value="d">Deluxe</option>
+                <option value="f">Family</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Harga :</td>
+            <td><input type="number" name="harga" readonly /></td>
+          </tr>
+          <tr>
+            <td>Tanggal Pesan :</td>
+            <td><input type="date" name="tgl_pesan" /></td>
+          </tr>
+          <tr>
+            <td>Lama Menginap</td>
+            <td><input type="number" name="durasi" placeholder="Hari" /></td>
+          </tr>
+          <tr>
+            <td>Termasuk Breakfast :</td>
+            <td>
+              <input type="radio" id="Breakfast" name="Breakfast" value="ya" checked/> Ya
+              <input type="radio"id="Breakfast" name="Breakfast"value="tidak"/> Tidak
+            </td>
+          </tr>
+          <tr>
+            <td>Total Harga :</td>
+            <td><input type="number" name="totHarga" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="submit">Simpan</button>
+              <button type="reset">Batal</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

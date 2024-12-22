@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Artikel</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        border: 1px solid #000;
+        width: 400px;
+        padding: 10px;
+        margin: 20px auto;
+      }
+
+      .gambar {
+        border: 1px solid #000;
+        width: 120px;
+        height: 150px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gambar img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .konten {
+        flex: 1;
+        padding-left: 10px;
+      }
+
+      .judul {
+        font-weight: bold;
+        border: 1px solid #000;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+
+      .artikel {
+        border: 1px solid #000;
+        padding: 5px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      .baca-selengkapnya {
+        color: blue;
+        text-decoration: none;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function toggleArtikel() {
+        const artikel = document.getElementById("artikel");
+        const button = document.getElementById("bacaSelengkapnya");
+
+        if (artikel.classList.contains("collapsed")) {
+          artikel.textContent =
+            "Fakultas Ilmu Komputer merupakan salah satu fakultas unggulan di universitas kami. Fakultas ini menawarkan beberapa program studi yang berfokus pada bidang teknologi informasi dan ilmu komputer, seperti Teknik Informatika, Sistem Informasi, dan Manajemen Informatika. Selain memiliki fasilitas yang modern, fakultas ini juga didukung oleh dosen-dosen yang berpengalaman di bidangnya. Tujuan utama fakultas ini adalah menghasilkan lulusan yang siap menghadapi tantangan di dunia kerja, dengan kemampuan teknologi dan analisis yang kuat serta keterampilan pemrograman yang mendalam.";
+          button.textContent = "Tutup";
+        } else {
+          artikel.textContent =
+            "Candi Borobudur merupakan objek wisata yang berada di Daerah Istimewa Yogyakarta sering sekali para turis mengunjungi objek wisata tersebut";
+          button.textContent = "Baca Selengkapnya";
+        }
+
+        artikel.classList.toggle("collapsed");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="gambar">
+        <img src="../asset/borobudur.jpg" alt="Gambar Fakultas Ilmu Komputer" />
+      </div>
+      <div class="konten">
+        <div class="judul">Candi Borobudur</div>
+        <div id="artikel" class="artikel collapsed">
+          Candi Borobudur merupakan objek wisata yang berada di Daerah Istimewa
+          Yogyakarta sering sekali para turis mengunjungi objek wisata tersebut
+        </div>
+        <a
+          id="bacaSelengkapnya"
+          onclick="toggleArtikel()"
+          class="baca-selengkapnya"
+          >Baca Selengkapnya</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

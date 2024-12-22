@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Teks Bergerak</title>
+  </head>
+  <style>
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+    .marquee-content {
+      display: inline-block;
+      animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <body>
+    <div class="marquee">
+      <div class="marquee-content">
+        Menjadi Universitas Unggulan di Internasional Pada Tahun 2030
+      </div>
+    </div>
+  </body>
+</html>

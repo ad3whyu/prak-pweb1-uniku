@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0px;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li:hover > a {
+            color: #ddd;
+        }
+
+        /* Dropdown menu */
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #555;
+            min-width: 200px;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            color: #fff;
+            padding: 10px 15px;
+            display: block;
+            text-align: left;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #666;
+        }
+
+        /* Nested submenu */
+        nav ul li ul li ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #666;
+            min-width: 200px;
+        }
+
+        nav ul li ul li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>DEWWW HOTEL</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="kamar.html">Kamar</a></li>
+            <li>
+                <a href="fasilitas.html">Fasilitas</a>
+                <ul>
+                    <li><a href="petualangan_alam.html">Petualangan Alam</a></li>
+                    <li>
+                        <a href="kolam_renang.html">Kolam Renang</a>
+                        <ul>
+                            <li><a href="sumber_air_panas.html">Sumber Air Panas</a></li>
+                            <li>
+                                <a href="kolam_renang_anak.html">Kolam Renang Anak & Dewasa</a>
+                                <ul>
+                                    <li><a href="reguler.html">Reguler</a></li>
+                                    <li><a href="premium.html">Premium</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="pusat_kebugaran.html">Pusat Kebugaran</a></li>
+                    <li><a href="ruang_rapat.html">Ruang Rapat</a></li>
+                </ul>
+            </li>
+            <li><a href="pesan.html">Pesan Sekarang</a></li>
+        </ul>
+    </nav>
+    <div class="left">
+        <iframe src="ytTugas2.html" style="flex: 1; height: 500px; width: 300px; border: none;" name="kiri"></iframe>
+        <iframe src="homeTugas2.html" style="flex: 2;height: 500px; width: 1027px; border: none;" name="kanan"></iframe>
+    </div>
+    <div class="bottom">
+        <iframe src="footerTugas2.html" style="flex: 1; height: 50px; width: 100%; border: none;"></iframe>
+    </div>
+</body>
+</html>
