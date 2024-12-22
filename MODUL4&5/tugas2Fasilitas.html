@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tambah Data Fasilitas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Tambah Data Fasilitas</h1>
+    <form id="formFasilitas" onsubmit="return validateFasilitas()">
+      <label for="fasilitas">Pilih Fasilitas:</label><br />
+      <select id="fasilitas" name="fasilitas" required>
+        <option value="">-Pilih Fasilitas-</option>
+        <option value="Wi-Fi">Wi-Fi</option>
+        <option value="AC">AC</option>
+        <option value="TV">TV</option>
+        <option value="Kulkas">Kulkas</option>
+        <option value="Sarapan">Sarapan</option></select
+      ><br /><br />
+
+      <button type="submit">Tambah Fasilitas</button>
+    </form>
+
+    <div id="errorFasilitas" class="error"></div>
+
+    <script>
+      function validateFasilitas() {
+        let fasilitas = document.getElementById("fasilitas").value;
+        let errorFasilitas = document.getElementById("errorFasilitas");
+        errorFasilitas.innerHTML = "";
+
+        if (fasilitas === "") {
+          errorFasilitas.innerHTML = "Fasilitas harus dipilih!";
+          return false;
+        }
+
+        alert("fasilitas berhasil ditambahkan");
+        return true;
+      }
+    </script>
+  </body>
+</html>

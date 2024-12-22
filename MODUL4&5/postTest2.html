@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penjualan</title>
+    <script src="js/postTest2.js"></script>
+  </head>
+  <body>
+    <form action="" name="form1">
+      <table border="1">
+        <tr>
+          <td colspan="2" align="center"><b>DATA PENJUALAN BARANG</b></td>
+        </tr>
+        <tr>
+          <td><label for="">Kode</label></td>
+          <td>
+            <select name="kode" id="" onchange="barang()">
+              <option value="pilih">--Pilih Salah Satu--</option>
+              <option value="B001">B001</option>
+              <option value="B002">B002</option>
+              <option value="B003">B003</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Jumlah Beli</label></td>
+          <td>
+            <input type="number" name="jbeli" id="jbeli" oninput="tampilkan()"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Nama Barang</label></td>
+          <td>
+            <input type="text" name="nmBarang" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Harga</label></td>
+          <td>
+            <input type="text" name="hargaBarang" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Jumlah Bayar</label></td>
+          <td>
+            <input type="number" name="jmlBayar" id="jmlBayar" readonly />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Potongan</label>
+            <input type="text" name="persen" id="persen" size="2" readonly />%
+          </td>
+          <td>
+            <input type="text" name="jmlPotongan" id="jmlPotongan" readonly />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Total Bayar</label></td>
+          <td><input type="text" name="tBayar" readonly /></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="button" name="tampil" value="tampil" onclick="nota()">
+              Tampilkan
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="nota"></div>
+  </body>
+</html>

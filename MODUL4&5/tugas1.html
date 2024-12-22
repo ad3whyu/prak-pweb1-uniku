@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Login</title>
+  </head>
+  <!-- javascript -->
+  <script>
+    function validasi() {
+      let user = document.getElementById("usr").value;
+      let pass = document.getElementById("pass").value;
+
+      if (user === "admin" && pass === "123") {
+        alert("Login Sukses");
+        window.location.href = "index.html";
+      } else {
+        alert("Login Gagal");
+        window.location.href = "tugas1.html";
+      }
+    }
+  </script>
+  <body>
+    <h1>Validasi Login</h1>
+    <form action="" method="post" name="form1">
+      <table>
+        <tr>
+          <td>Username</td>
+          <td><input type="text" name="usr" id="usr" /></td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="text" name="pass" id="pass" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="button" onclick="validasi()">Login</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

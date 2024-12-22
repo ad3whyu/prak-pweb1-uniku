@@ -1,0 +1,20 @@
+.member-card {
+  transition: transform 0.3s ease-in-out;
+}
+.member-card:hover {
+  transform: scale(1.05);
+}
+.member-photo img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+.card-body {
+  text-align: start;
+}
+.member-photo {
+  text-align: center;
+  margin-bottom: 1rem;
+}

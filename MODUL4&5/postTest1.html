@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menghitung Gaji</title>
+    <script src="js/postTest1.js"></script>
+  </head>
+  <body>
+    <form action="" name="form1">
+      <table border="1">
+        <tr>
+          <td colspan="2" align="center">PERHITUNGAN GAJI</td>
+        </tr>
+        <tr>
+          <td><label for="">Golongan</label></td>
+          <td>
+            <select name="gol" id="" onchange="tampil()">
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Jumlah anak</label></td>
+          <td>
+            <input type="text" name="anak" id="anak" size="10" maxlength="10" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="button" name="hitung" value="hitung" onclick="hit()">
+              Hitung
+            </button>
+            <button type="reset" name="batal" value="cancel">Cancel</button>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Gaji Pokok</label></td>
+          <td><input type="text" name="gapok" readonly/></td>
+        </tr>
+        <tr>
+          <td><label for="">Tunjangan</label></td>
+          <td><input type="text" name="tunjangan" readonly/></td>
+        </tr>
+        <tr>
+          <td><label for="">Gaji Bersih</label></td>
+          <td><input type="text" name="gaji" readonly/></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

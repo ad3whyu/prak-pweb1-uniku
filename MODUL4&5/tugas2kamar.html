@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tambah Data Kamar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form Tambah Data Kamar</h1>
+    <form id="formKamar" onsubmit="return validateKamar()">
+      <label for="namaKamar">Nama Kamar:</label><br />
+      <input type="text" id="namaKamar" name="namaKamar" required /><br /><br />
+
+      <label for="tipeKamar">Tipe Kamar:</label><br />
+      <input type="text" id="tipeKamar" name="tipeKamar" required /><br /><br />
+
+      <label for="hargaKamar">Harga per Malam:</label><br />
+      <input
+        type="number"
+        id="hargaKamar"
+        name="hargaKamar"
+        required
+      /><br /><br />
+
+      <button type="submit">Tambah Kamar</button>
+    </form>
+
+    <div id="errorKamar" class="error"></div>
+
+    <script>
+      function validateKamar() {
+        let namaKamar = document.getElementById("namaKamar").value;
+        let tipeKamar = document.getElementById("tipeKamar").value;
+        let hargaKamar = document.getElementById("hargaKamar").value;
+        let errorKamar = document.getElementById("errorKamar");
+        errorKamar.innerHTML = "";
+
+        if (namaKamar === "" || tipeKamar === "" || hargaKamar === "") {
+          errorKamar.innerHTML = "Semua kolom harus diisi!";
+          return false;
+        }
+
+        if (isNaN(hargaKamar) || hargaKamar <= 0) {
+          errorKamar.innerHTML = "Harga per malam harus berupa angka positif!";
+          return false;
+        }
+        alert("Data Kamar berhasil ditambahkan");
+        return true;
+      }
+    </script>
+  </body>
+</html>

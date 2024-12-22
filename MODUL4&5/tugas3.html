@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jsTugas3.js"></script>
+  </head>
+  <body>
+    <div class="form-1">
+      <h1>Form Pemesanan</h1>
+      <form action="" method="post" name="form2">
+        <table>
+          <tr>
+            <td>Nama Pemesan :</td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Nama Lengkap"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin:</td>
+            <td>
+              <input type="radio" id="jkL" name="jkelamin" value="L" />Laki-laki
+              <input type="radio" id="jkP"name="jkelamin"value="P"/>Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td>Nomor Identitas :</td>
+            <td>
+              <input
+                type="number"
+                name="identitas" id="identitas"
+                placeholder="Nomor Identitas 16 Digit"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Tipe Kamar :</td>
+            <td>
+              <select name="tipeKamar" id="tipeKamar" onchange="lihatHarga()">
+                <option value="-">--Pilih--</option>
+                <option value="Standar">Standar</option>
+                <option value="Deluxe">Deluxe</option>
+                <option value="Family">Family</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Harga :</td>
+            <td><input type="number" name="harga" id="harga" readonly/></td>
+          </tr>
+          <tr>
+            <td>Tanggal Pesan :</td>
+            <td><input type="date" name="tgl_pesan" id="tgl_pesan"/></td>
+          </tr>
+          <tr>
+            <td>Lama Menginap</td>
+            <td>
+              <input
+                type="number"
+                name="durasi"
+                id="durasi"
+                placeholder="isi dengan Angka"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Termasuk Breakfast :</td>
+            <td>
+              <input type="checkbox" id="BreakfastYa" name="Breakfast" value="ya" checked/>Ya
+              <input type="checkbox" id="Breakfast"name="Breakfast"value="tidak"/>Tidak
+            </td>
+          </tr>
+          <tr>
+            <td>Total Harga :</td>
+            <td><input type="number" name="totalHarga" id="totalHarga" readonly/></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="button" onclick="hitungHarga()">Simpan</button>
+              <button type="reset">Batal</button>
+            </td>
+          </tr>
+        </table>
+        <div id="resume"></div>
+      </form>
+    </div>
+  </body>
+</html>
